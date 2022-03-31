@@ -31,23 +31,28 @@ class SignUpActivity : BaseActivity() {
         et_cpassword = findViewById(R.id.et_cpassword)
 
         val b_signup = findViewById<Button>(R.id.b_signup)
-        b_signup.setOnClickListener { firebaseSignUp(et_email.text.toString(),et_password.text.toString()) }
+        b_signup.setOnClickListener {
+            firebaseSignUp(
+                et_email.text.toString(),
+                et_password.text.toString()
+            )
+        }
         val tv_signin = findViewById<TextView>(R.id.tv_signin)
         tv_signin.setOnClickListener { finish() }
     }
 
     private fun firebaseSignUp(email: String, password: String) {
-        // showLoading(this)
+        showLoading(this)
 
         AuthManager.signUp(email, password, object : AuthHandler {
             override fun onSuccess() {
-                // dismiss loading
+                dismissLoading()
                 toast("Signed up successfully")
                 callMainActivity(context)
             }
 
             override fun onError(exception: Exception?) {
-                // dismiss loading
+                dismissLoading()
                 toast("Signed up failed")
             }
         })

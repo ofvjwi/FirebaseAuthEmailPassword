@@ -42,17 +42,17 @@ class SignInActivity : BaseActivity() {
 
     private fun firebaseSignIn(email: String, password: String) {
 
-        // showLoading(this)
+        showLoading(this)
 
         AuthManager.signIn(email, password, object : AuthHandler {
             override fun onSuccess() {
-                // dismiss loading
+                dismissLoading()
                 toast("Signed in successfully!")
                 callMainActivity(context)
             }
 
             override fun onError(exception: Exception?) {
-                // dismiss loading
+                dismissLoading()
                 toast("Signed in failed! ${exception.toString()}")
             }
         })
