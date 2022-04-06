@@ -1,16 +1,15 @@
 package com.example.firebaselesson1.activity
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.WindowManager
-import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaselesson1.R
 import com.example.firebaselesson1.managers.AuthManager
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.setFlags(

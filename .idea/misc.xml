@@ -4,14 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/drawable/app_main_gradient.xml" value="0.21574074074074073" />
+        <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/drawable/ic_log_out.xml" value="0.2111111111111111" />
         <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/drawable/loading_frame.xml" value="0.2111111111111111" />
         <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/drawable/shape_circle_orange_light.xml" value="0.2111111111111111" />
         <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/drawable/view_rounded_corner.xml" value="0.21574074074074073" />
-        <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/layout/activity_create.xml" value="0.22" />
+        <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/layout/activity_signin.xml" value="0.20416666666666666" />
         <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
         <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/layout/custom_progress_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/AllProjectsBootcamp/FirebaseLesson1/app/src/main/res/layout/item_recycler.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

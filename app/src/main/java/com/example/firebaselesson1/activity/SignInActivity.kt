@@ -5,15 +5,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaselesson1.R
 import com.example.firebaselesson1.managers.AuthHandler
 import com.example.firebaselesson1.managers.AuthManager
-import com.example.firebaselesson1.utils.Extensions
 import com.example.firebaselesson1.utils.Extensions.toast
-import java.lang.Exception
-import java.security.cert.Extension
 
 class SignInActivity : BaseActivity() {
     val TAG = SignInActivity::class.java.toString()
@@ -30,7 +25,12 @@ class SignInActivity : BaseActivity() {
         et_email = findViewById(R.id.et_email)
         et_password = findViewById(R.id.et_password)
         val b_signin = findViewById<Button>(R.id.b_signin)
-        b_signin.setOnClickListener { firebaseSignIn(et_email.text.toString(), et_password.text.toString()) }
+        b_signin.setOnClickListener {
+            firebaseSignIn(
+                et_email.text.toString(),
+                et_password.text.toString()
+            )
+        }
         val tv_signup = findViewById<TextView>(R.id.tv_signup)
         tv_signup.setOnClickListener { callSignUpActivity() }
     }

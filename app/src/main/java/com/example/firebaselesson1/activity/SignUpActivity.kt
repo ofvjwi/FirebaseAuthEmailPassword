@@ -4,12 +4,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaselesson1.R
 import com.example.firebaselesson1.managers.AuthHandler
 import com.example.firebaselesson1.managers.AuthManager
 import com.example.firebaselesson1.utils.Extensions.toast
-import java.lang.Exception
 
 class SignUpActivity : BaseActivity() {
     val TAG = SignUpActivity::class.java.toString()
